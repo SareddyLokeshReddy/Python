@@ -378,7 +378,7 @@ for i in range(n):
             print("*",end=" ")
     print() 
 #reverse a number
-n=int(input("Enter the number: "))
+s=int(input("Enter the number: "))
 rev =0
 while n>0:
     d=n%10
