@@ -380,8 +380,8 @@ for i in range(n):
 #reverse a number
 s=int(input("Enter the number: "))
 rev =0
-while n>0:
-    d=n%10
-    rev=rev*10+d
-    n=n//10
+while s>0:
+    a=s%10
+    rev=rev*10+a
+    s=s//10
 print(rev)
