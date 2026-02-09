@@ -385,3 +385,7 @@ while s>0:
     rev=rev*10+a
     s=s//10
 print(rev)
+#1234
+#123
+#12
+#1
