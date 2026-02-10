@@ -369,7 +369,7 @@ for i in range(n):
 #.***
 #. **
 #.  *
-n=int(input("Enter the number: "))
+s=int(input("Enter the number: "))
 for i in range(n):
     for j in range(n):
         if j<n-i-1:
