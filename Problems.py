@@ -329,7 +329,7 @@ class Solution:
                 if nums[i] + nums[j] == target:
                     return [i, j]
 #remove vowels
-s=input("Enter the name: ")
+n=input("Enter the name: ")
 t=""
 v="aeiouAEIOU"
 for ch in s:
