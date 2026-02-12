@@ -277,11 +277,11 @@ class Solution:
             return False
 #check perfect number
 num=int(input("enter the number: "))
-sum=0
+s=0
 for i in range(1,num):
-    if num%1==0:
-        sum+=i
-if sum==num:
+    if num%i==0:
+        s+=i
+if s==num:
     print("It is perfect number")
 #container with most water
 class Solution:
