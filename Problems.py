@@ -394,3 +394,38 @@ for i in range(n,0,-1):
     for j in range(1,i+1):
         print(j,end=" ")
 print()
+
+class Solution:
+    def minTime(self, arr, k):
+        
+        low = max(arr)
+        high = sum(arr)
+        answer = high
+        
+        while low <= high:
+            mid = (low + high) // 2
+            
+            if self.canPaint(arr, k, mid):
+                answer = mid
+                high = mid - 1
+            else:
+                low = mid + 1
+                
+        return answer
+    
+    
+    def canPaint(self, arr, k, limit):
+        painters = 1
+        total = 0
+        
+        for board in arr:
+            total += board
+            
+            if total > limit:
+                painters += 1
+                total = board
+                
+                if painters > k:
+                    return False
+        
+        return True
