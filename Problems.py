@@ -400,18 +400,18 @@ class Solution:
         
         low = max(arr)
         high = sum(arr)
-        answer = high
+        a = high
         
         while low <= high:
             mid = (low + high) // 2
             
             if self.canPaint(arr, k, mid):
-                answer = mid
+                a = mid
                 high = mid - 1
             else:
                 low = mid + 1
                 
-        return answer
+        return a
     
     
     def canPaint(self, arr, k, limit):
