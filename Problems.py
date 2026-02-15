@@ -337,7 +337,7 @@ for ch in s:
         t+=ch
 print(t)
 #check power of two
-s=int(input("Enter the number: "))
+t=int(input("Enter the number: "))
 if n>0 and (n & (n-1))==0:
     print("It is power of two")
 else:
