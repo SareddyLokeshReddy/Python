@@ -494,7 +494,7 @@ class Solution:
             if num in seen:
                 return num
             seen.add(num)
-#score of string
+##score of string
 class Solution:
     def scoreOfString(self, s: str) -> int:
         sum = 0
