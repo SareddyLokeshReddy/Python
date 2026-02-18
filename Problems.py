@@ -437,3 +437,4 @@ class Solution:
             if i % 3 == 0 or i % 5 == 0 or i % 7 == 0:
                 s += i
         return s
+#type of triangle
