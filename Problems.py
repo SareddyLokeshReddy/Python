@@ -438,3 +438,11 @@ class Solution:
                 s += i
         return s
 #type of triangle
+class Solution:
+    def triangleType(self, a: int, b: int, c: int) -> int:
+        if a == b and b == c:
+            return 1
+        elif a == b or b == c or a == c:
+            return 2
+        else:
+            return 3
