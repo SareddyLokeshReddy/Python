@@ -494,5 +494,6 @@ class Solution:
             if num in seen:
                 return num
             seen.add(num)
+#score of string
 
         
