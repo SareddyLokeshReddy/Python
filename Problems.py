@@ -472,7 +472,7 @@ class Solution:
                 n2 -=1
         return "".join(s)
  #count the number ofspecial characters
- class Solution:
+class Solution:
     def numberOfSpecialChars(self, word: str) -> int:
         l = set()
         u = set()
@@ -485,5 +485,6 @@ class Solution:
 
         s = l & u
         return len(s)
+#N repeated Element in Size 2N Array
 
         
