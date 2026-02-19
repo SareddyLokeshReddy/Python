@@ -471,4 +471,5 @@ class Solution:
                 n1 += 1
                 n2 -=1
         return "".join(s)
+ #count the number ofspecial characters
  
