@@ -456,3 +456,19 @@ class Solution:
             n >>= 1
         return rev
 #reverse only letters
+class Solution:
+    def reverseOnlyLetters(self, s: str) -> str:
+        s = list(s)
+        n1 = 0
+        n2 = len(s) - 1
+        while n1 < n2:
+            if not s[n1].isalpha():
+                n1+=1
+            elif not s[n2].isalpha():
+                n2-=1
+            else:
+                s[n1],s[n2] = s[n2],s[n1]
+                n1 += 1
+                n2 -=1
+        return "".join(s)
+ 
