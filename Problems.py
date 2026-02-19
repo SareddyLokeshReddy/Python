@@ -472,4 +472,18 @@ class Solution:
                 n2 -=1
         return "".join(s)
  #count the number ofspecial characters
- 
+ class Solution:
+    def numberOfSpecialChars(self, word: str) -> int:
+        l = set()
+        u = set()
+
+        for ch in word:
+            if ch.islower():
+                l.add(ch)
+            elif ch.isupper():
+                u.add(ch.lower())
+
+        s = l & u
+        return len(s)
+
+        
