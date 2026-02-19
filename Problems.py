@@ -486,5 +486,13 @@ class Solution:
         s = l & u
         return len(s)
 #N repeated Element in Size 2N Array
+class Solution:
+    def repeatedNTimes(self, nums: List[int]) -> int:
+        seen = set()
+        
+        for num in nums:
+            if num in seen:
+                return num
+            seen.add(num)
 
         
