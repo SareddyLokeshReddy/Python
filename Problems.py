@@ -502,4 +502,6 @@ class Solution:
             n = abs(ord(s[i]) - ord(s[i+1]))
             sum += n 
         return sum
+#number of 1 bits
+
         
