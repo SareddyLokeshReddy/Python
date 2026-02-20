@@ -508,5 +508,14 @@ class Solution:
         bits = bin(n)[2:]
         return bits.count("1")
 #kth missing positive number
+class Solution:
+    def findKthPositive(self, arr: List[int], k: int) -> int:
+        i = 1
+        s = []
+        while len(s) != k:
+            if i not in arr:
+                s.append(i)
+            i += 1
+        return s[-1]
 
         
