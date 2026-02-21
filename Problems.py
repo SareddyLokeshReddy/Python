@@ -517,5 +517,13 @@ class Solution:
                 s.append(i)
             i += 1
         return s[-1]
+#findduplicate number
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        s = set()
+        for num in nums:
+            if num in s:
+                return num
+            s.add(num)
 
         
