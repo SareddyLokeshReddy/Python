@@ -212,7 +212,14 @@ def sum_of_digits(n):
             return base*power(base,exp-1)
         print(power(2,3))
 
-
+#product of three numbers
+class Solution:
+    def maximumProduct(self, nums: List[int]) -> int:
+        nums.sort()
+        pro1 = nums[-1] * nums[-2] * nums[-3]
+        pro2 = nums[0] * nums[1] * nums[-1]
+        return max(pro1,pro2)
+                
  
 
 
