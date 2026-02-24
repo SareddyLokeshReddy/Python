@@ -225,6 +225,15 @@ lst={'ram':20,'krish':23,'shyam':21,'radha':25,'chandu':22}
 for k,v in lst.items():
     if v==25:
         print(k,v)
+#list
+l=[10,20,16,23,12,25,16,16,10,20]
+dic={}
+for i in l:
+    if i not in dic:
+        dic[i]=1
+    else:
+        dic[i]+=1
+print(dic)
    
 
 
