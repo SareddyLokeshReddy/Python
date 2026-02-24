@@ -240,6 +240,11 @@ class Solution:
         s = s.split()
         s.reverse()
         return " ".join(s)
-        
+#reverse string prefix
+class Solution:
+    def reversePrefix(self, s: str, k: int) -> str:
+        d1 = s[:k][::-1]
+        d2 = s[k:len(s)]
+        return d1 + d2
 
 
