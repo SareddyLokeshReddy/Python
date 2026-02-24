@@ -235,6 +235,11 @@ for i in l:
         dic[i]+=1
 print(dic)
 #reverse words in a string
-
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        s = s.split()
+        s.reverse()
+        return " ".join(s)
+        
 
 
