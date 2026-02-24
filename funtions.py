@@ -216,10 +216,15 @@ def sum_of_digits(n):
 class Solution:
     def maximumProduct(self, nums: List[int]) -> int:
         nums.sort()
-        pro1 = nums[-1] * nums[-2] * nums[-3]
-        pro2 = nums[0] * nums[1] * nums[-1]
-        return max(pro1,pro2)
+        p1 = nums[-1] * nums[-2] * nums[-3]
+        p2 = nums[0] * nums[1] * nums[-1]
+        return max(p1,p2)
                 
- 
+ #dictionary
+lst={'ram':20,'krish':23,'shyam':21,'radha':25,'chandu':22}
+for k,v in lst.items():
+    if v==25:
+        print(k,v)
+   
 
 
