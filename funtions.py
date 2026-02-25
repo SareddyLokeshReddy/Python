@@ -257,4 +257,4 @@ def check_even_odd(n):
             print(num, "is Odd")
 nums = [10, 23, 45, 68, 90, 13]
 check_even_odd(nums)
-
+#can we make arthimetic progression from given array
