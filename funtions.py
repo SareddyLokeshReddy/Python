@@ -258,3 +258,11 @@ def check_even_odd(n):
 nums = [10, 23, 45, 68, 90, 13]
 check_even_odd(nums)
 #can we make arthimetic progression from given array
+class Solution:
+    def canMakeArithmeticProgression(self, arr: List[int]) -> bool:
+        arr.sort()
+        d = arr[0] - arr[1]
+        for i in range(2,len(arr)):
+            if arr[i-1] - arr[i] != d:
+                return False
+        return True
