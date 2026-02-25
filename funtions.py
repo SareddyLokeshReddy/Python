@@ -266,3 +266,4 @@ class Solution:
             if arr[i-1] - arr[i] != d:
                 return False
         return True
+#return true if string contains vowels
