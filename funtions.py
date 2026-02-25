@@ -249,5 +249,12 @@ class Solution:
         d2 = s[k:len(s)]
         return d1 + d2
 #even or odd
-
+def check_even_odd(n):
+    for num in n:
+        if num % 2 == 0:
+            print(num, "is Even")
+        else:
+            print(num, "is Odd")
+nums = [10, 23, 45, 68, 90, 13]
+check_even_odd(nums)
 
