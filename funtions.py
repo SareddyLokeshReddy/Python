@@ -2,6 +2,8 @@
 from operator import mul
 from typing import List
 
+from matplotlib.pylab import number
+
 
 def say_hello():
     print("Hello, welcome to Python!")
@@ -246,5 +248,6 @@ class Solution:
         d1 = s[:k][::-1]
         d2 = s[k:len(s)]
         return d1 + d2
+#even or odd
 
 
