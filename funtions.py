@@ -267,3 +267,10 @@ class Solution:
                 return False
         return True
 #return true if string contains vowels
+def contains_vowels(s):
+    for char in s:
+        if char.lower() in 'aeiou':
+            return True
+    return False
+s = "Hello"
+print(contains_vowels(s))
