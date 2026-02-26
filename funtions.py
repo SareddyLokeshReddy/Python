@@ -274,3 +274,4 @@ def contains_vowels(s):
     return False
 s = "Hello"
 print(contains_vowels(s))
+#Maximum Product of Two Elements in an Array
