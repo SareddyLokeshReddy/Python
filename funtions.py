@@ -286,4 +286,4 @@ class Solution:
                 if v>max:
                     max=v
      return max
-            
+#count elements with maximum frequency
