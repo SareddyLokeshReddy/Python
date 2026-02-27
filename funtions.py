@@ -304,3 +304,19 @@ class Solution:
                 count += value
         return count
 #count elements with minimum frequency
+class Solution:
+    def minFrequencyElements(self, nums: List[int]) -> int:
+        d = {} 
+        for i in range(len(nums)):
+            if nums[i] in d:
+                d[nums[i]] += 1
+            else:
+                d[nums[i]] = 1
+
+        min_n = min(d.values())
+
+        count = 0
+        for value in d.values():
+            if value == min_n:
+                count += value
+        return count
