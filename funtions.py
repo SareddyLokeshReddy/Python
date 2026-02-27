@@ -303,3 +303,4 @@ class Solution:
             if value == max_n:
                 count += value
         return count
+#count elements with minimum frequency
