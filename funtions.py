@@ -228,9 +228,9 @@ for k,v in lst.items():
     if v==25:
         print(k,v)
 #list
-l=[10,20,16,23,12,25,16,16,10,20]
+r=[10,20,16,23,12,25,16,16,10,20]
 dic={}
-for i in l:
+for i in r:
     if i not in dic:
         dic[i]=1
     else:
