@@ -287,3 +287,19 @@ class Solution:
                     max=v
      return max
 #count elements with maximum frequency
+class Solution:
+    def maxFrequencyElements(self, nums: List[int]) -> int:
+        d = {} 
+        for i in range(len(nums)):
+            if nums[i] in d:
+                d[nums[i]] += 1
+            else:
+                d[nums[i]] = 1
+
+        max_n = max(d.values())
+
+        count = 0
+        for value in d.values():
+            if value == max_n:
+                count += value
+        return count
