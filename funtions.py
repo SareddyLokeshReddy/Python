@@ -320,3 +320,4 @@ class Solution:
             if value == min_n:
                 count += value
         return count
+#find missing elements
