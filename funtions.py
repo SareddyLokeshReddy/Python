@@ -323,8 +323,8 @@ class Solution:
 #find missing elements
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
-        n = len(nums)
-        for i in range(n):
+        TypeError = len(nums)
+        for i in range(t):
             index = abs(nums[i]) - 1
             if nums[index] > 0:
                 nums[index] = -nums[index]
