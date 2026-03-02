@@ -335,3 +335,4 @@ class Solution:
                 result.append(i + 1)
 
         return result
+#truncate sentence
