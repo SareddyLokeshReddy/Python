@@ -347,3 +347,9 @@ for i in range(1,n+1):
     sum+=i
 print("The sum of first", n, "natural numbers is:", sum)
 #chech whether the number is palindrome or not
+def is_plindrome(n):
+    s=str(n)
+    if s==s[::-1]:
+        return True
+    else:
+        return False
