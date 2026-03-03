@@ -353,3 +353,4 @@ def is_plindrome(n):
         return True
     else:
         return False
+#third maximum number in list
