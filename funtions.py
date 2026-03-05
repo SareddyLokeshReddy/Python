@@ -379,3 +379,5 @@ class Solution:
         for w in words:
             res.append(w[::-1])
         return " ".join(res)
+#lambda function
+add = lambda a, b: a + b
