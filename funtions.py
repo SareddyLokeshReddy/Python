@@ -379,5 +379,9 @@ class Solution:
         for w in words:
             res.append(w[::-1])
         return " ".join(res)
-#lambda function
+#lambda function add
 add = lambda a, b: a + b
+print(add(5, 3))
+#lambda function multiplication
+mul = lambda a, b: a * b
+print(mul(5, 3))
