@@ -389,3 +389,5 @@ print(mul(5, 3))
 div = lambda a, b: a / b
 print(div(10, 2))
 #lambda function square
+square = lambda x: x * x
+print(square(4))
