@@ -386,3 +386,5 @@ print(add(5, 3))
 mul = lambda a, b: a * b
 print(mul(5, 3))
 #lambda function division
+div = lambda a, b: a / b
+print(div(10, 2))
