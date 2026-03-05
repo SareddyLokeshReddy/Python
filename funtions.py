@@ -385,3 +385,4 @@ print(add(5, 3))
 #lambda function multiplication
 mul = lambda a, b: a * b
 print(mul(5, 3))
+#lambda function division
