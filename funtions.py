@@ -404,3 +404,8 @@ print(result)
 n = [-2,5,-1,8,0]
 result = list(filter(lambda x: x>0, n))
 print(result)
+#4
+
+n = [10,12,15,7,20]
+result = list(filter(lambda x: x%5==0, n))
+print(result)
