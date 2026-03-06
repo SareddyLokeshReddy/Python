@@ -391,3 +391,8 @@ print(div(10, 2))
 #lambda function square
 square = lambda x: x * x
 print(square(4))
+#filter
+#1 return the divided by 2 numbers
+n = [1,2,3,4,5,6]
+result = list(filter(lambda x: x%2==0, n))
+print(result)
