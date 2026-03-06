@@ -396,3 +396,7 @@ print(square(4))
 n = [1,2,3,4,5,6]
 result = list(filter(lambda x: x%2==0, n))
 print(result)
+#2 return the greater than 10
+n = [5,12,7,18,3]
+result = list(filter(lambda x: x>10, n))
+print(result)
