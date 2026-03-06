@@ -409,3 +409,7 @@ print(result)
 n = [10,12,15,7,20]
 result = list(filter(lambda x: x%5==0, n))
 print(result)
+#5
+w = ["ram","varun","ravi","lokesh"]
+result = list(filter(lambda x: len(x)>4, w))
+print(result)
