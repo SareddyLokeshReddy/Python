@@ -438,3 +438,7 @@ print(result)
 w = ["hello", "world", "python"]
 result = list(map(lambda x: len(x), w))
 print(result)
+#3 return the uppercase of words
+w = ["hello", "world", "python"]
+result = list(map(lambda x: x.upper(), w))
+print(result)
