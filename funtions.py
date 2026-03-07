@@ -426,3 +426,6 @@ def remove_adjacent_duplicates(s):
         else:
             stack.append(char)
     return ''.join(stack)
+s = "abbaca"
+result = remove_adjacent_duplicates(s)
+print(result)
