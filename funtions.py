@@ -413,3 +413,4 @@ print(result)
 w = ["ram","varun","ravi","lokesh"]
 result = list(filter(lambda x: len(x)>4, w))
 print(result)
+#removing stars from a string
