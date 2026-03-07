@@ -429,3 +429,8 @@ def remove_adjacent_duplicates(s):
 s = "abbaca"
 result = remove_adjacent_duplicates(s)
 print(result)
+#map function
+#1 return the square of numbers
+n = [1,2,3,4,5]
+result = list(map(lambda x: x*x, n))
+print(result)
