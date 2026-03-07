@@ -417,3 +417,4 @@ print(result)
 s = "he*ll*o w*or*ld"
 result = s.replace("*", "")     
 print(result)
+#removing all adjacent duplicates from a string
