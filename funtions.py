@@ -414,3 +414,6 @@ w = ["ram","varun","ravi","lokesh"]
 result = list(filter(lambda x: len(x)>4, w))
 print(result)
 #removing stars from a string
+s = "he*ll*o w*or*ld"
+result = s.replace("*", "")     
+print(result)
