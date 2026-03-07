@@ -434,3 +434,7 @@ print(result)
 n = [1,2,3,4,5]
 result = list(map(lambda x: x*x, n))
 print(result)
+#2 return the length of words
+w = ["hello", "world", "python"]
+result = list(map(lambda x: len(x), w))
+print(result)
