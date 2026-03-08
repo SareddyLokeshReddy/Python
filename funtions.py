@@ -442,3 +442,4 @@ print(result)
 w = ["hello", "world", "python"]
 result = list(map(lambda x: x.upper(), w))
 print(result)
+#transpose of a matrix
