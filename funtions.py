@@ -466,3 +466,4 @@ def sorted_squares(nums):
 nums = [-4, -1, 0, 3, 10]
 result = sorted_squares(nums)
 print(result)
+#find the number of good pairs
