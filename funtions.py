@@ -460,3 +460,9 @@ def user(a, b):
 a = int(input("Enter value of a: "))
 b = int(input("Enter value of b: "))
 user(a, b)
+#sorted squares of a list
+def sorted_squares(nums):
+    return sorted(x*x for x in nums)
+nums = [-4, -1, 0, 3, 10]
+result = sorted_squares(nums)
+print(result)
