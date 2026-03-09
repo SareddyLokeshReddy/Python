@@ -480,3 +480,4 @@ def num_identical_pairs(nums):
 nums = [1, 2, 3, 1, 1, 3]
 result = num_identical_pairs(nums)
 print(result)
+#backspace string compare
