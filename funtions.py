@@ -467,3 +467,16 @@ nums = [-4, -1, 0, 3, 10]
 result = sorted_squares(nums)
 print(result)
 #find the number of good pairs
+def num_identical_pairs(nums):
+    count = {}
+    pairs = 0
+    for num in nums:
+        if num in count:
+            pairs += count[num]
+            count[num] += 1
+        else:
+            count[num] = 1
+    return pairs
+nums = [1, 2, 3, 1, 1, 3]
+result = num_identical_pairs(nums)
+print(result)
