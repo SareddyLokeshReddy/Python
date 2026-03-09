@@ -448,8 +448,8 @@ def transpose(matrix):
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 result = transpose(matrix)
 print(result)
-#def operation(func):
-def wrapper(a, b):
+def operation(func):
+ def wrapper(a, b):
         print("Addition:", a + b)
         print("Multiplication:", a * b)
         return func(a, b)
@@ -459,5 +459,4 @@ def user(a, b):
     print("User inputs:", a, b)
 a = int(input("Enter value of a: "))
 b = int(input("Enter value of b: "))
-
 user(a, b)
