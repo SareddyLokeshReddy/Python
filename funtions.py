@@ -1,5 +1,7 @@
 #functions
 from operator import mul
+from os import remove
+from os import remove
 from typing import List
 
 from matplotlib.pylab import number
@@ -481,3 +483,14 @@ nums = [1, 2, 3, 1, 1, 3]
 result = num_identical_pairs(nums)
 print(result)
 #backspace string compare
+class Solution:
+    def backspaceCompare(self, s: str, t: str) -> bool:
+        def remove(s):
+            stack = []
+            for ch in s:
+                if ch != '#':
+                    stack.append(ch)
+                elif stack:
+                    stack.pop()
+            return stack
+        return remove(s) == remove(t)
