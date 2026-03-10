@@ -501,3 +501,18 @@ class Solution:
         set2 = set(nums2)
         return [list(set1 - set2), list(set2 - set1)]
 #Determine if String Halves Are Alike
+class Solution:
+    def halvesAreAlike(self, s: str) -> bool:
+        half = len(s) // 2
+        s1 = s[:half]
+        s2 = s[half:]
+
+        vowels = "aeiouAEIOU"
+        count1 = 0
+        count2 = 0
+        for i,j in zip(s1,s2):
+            if i in vowels:
+                count1 += 1
+            if j in vowels:
+                count2 += 1
+        return count1 == count2
