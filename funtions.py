@@ -494,3 +494,4 @@ class Solution:
                     stack.pop()
             return stack
         return remove(s) == remove(t)
+#find the difference of two arrays
