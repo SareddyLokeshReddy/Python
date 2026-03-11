@@ -516,3 +516,4 @@ class Solution:
             if j in vowels:
                 count2 += 1
         return count1 == count2
+#sum of subarray minimums
