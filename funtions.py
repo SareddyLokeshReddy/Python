@@ -552,3 +552,11 @@ class Solution:
                 count = 0
         return max_count
 #amstrong number
+def is_armstrong(n):
+    s = str(n)
+    num_digits = len(s)
+    armstrong_sum = sum(int(digit) ** num_digits for digit in s)
+    return armstrong_sum == n
+n = 153
+result = is_armstrong(n)
+print(result)
