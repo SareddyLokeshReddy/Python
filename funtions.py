@@ -552,14 +552,15 @@ class Solution:
                 count = 0
         return max_count
 #amstrong number in a list
-def is_armstrong(n):
-    s = str(n)
-    num_digits = len(s)
-    armstrong_sum = sum(int(digit) ** num_digits for digit in s)
-    return armstrong_sum == n
-n = 153
-result = is_armstrong(n)
-print(result)
+def amstrong_numbers(nums):
+    result = []
+    for num in nums:
+        s = str(num)
+        n = len(s)
+        armstrong_sum = sum(int(digit) ** n for digit in s)
+        if armstrong_sum == num:
+            result.append(num)
+    return result
 #palindrome number in list
 def palindrome_numbers(nums):
     return [num for num in nums if str(num) == str(num)[::-1]]
