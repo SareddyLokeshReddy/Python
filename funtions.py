@@ -539,3 +539,4 @@ class Solution:
             res.append(s[i:i + k][::-1])
             res.append(s[i + k:i + 2 * k])
         return ''.join(res)
+#consequtive ones 
