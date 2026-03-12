@@ -560,3 +560,4 @@ def is_armstrong(n):
 n = 153
 result = is_armstrong(n)
 print(result)
+#palindrome number
