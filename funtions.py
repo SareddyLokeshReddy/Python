@@ -551,7 +551,7 @@ class Solution:
             else:
                 count = 0
         return max_count
-#amstrong number
+#amstrong number in a list
 def is_armstrong(n):
     s = str(n)
     num_digits = len(s)
