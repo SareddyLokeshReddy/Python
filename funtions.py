@@ -561,3 +561,9 @@ n = 153
 result = is_armstrong(n)
 print(result)
 #palindrome number
+def is_palindrome(n):
+    s = str(n)
+    return s == s[::-1]
+n = 121
+result = is_palindrome(n)
+print(result)
