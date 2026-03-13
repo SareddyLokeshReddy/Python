@@ -586,3 +586,4 @@ class Solution:
             else:
                 count[num]=1
         return pairs
+#third maximum number in list
