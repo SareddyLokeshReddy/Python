@@ -574,3 +574,4 @@ class Solution:
         r=list(map(int, str(n)))
         r.sort()
         return r[-1]*r[-2]
+#find the number of good pairs
