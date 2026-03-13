@@ -567,3 +567,10 @@ def palindrome_numbers(nums):
 nums = [121, 123, 454, 789, 11]
 result = palindrome_numbers(nums)
 print(result)
+#maximum product of two elements in an array
+class Solution:
+    def maxProduct(self, n: int) -> int:
+        t=1
+        r=list(map(int, str(n)))
+        r.sort()
+        return r[-1]*r[-2]
