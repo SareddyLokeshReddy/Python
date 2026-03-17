@@ -428,8 +428,8 @@ def remove_adjacent_duplicates(s):
         else:
             stack.append(char)
     return ''.join(stack)
-s = "abbaca"
-result = remove_adjacent_duplicates(s)
+t = "abbaca"
+result = remove_adjacent_duplicates(t)
 print(result)
 #map function
 #1 return the square of numbers
