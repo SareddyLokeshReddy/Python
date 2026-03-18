@@ -403,8 +403,8 @@ n = [5,12,7,18,3]
 result = list(filter(lambda x: x>10, n))
 print(result)
 #3
-n = [-2,5,-1,8,0]
-result = list(filter(lambda x: x>0, n))
+t = [-2,5,-1,8,0]
+result = list(filter(lambda x: x>0, t))
 print(result)
 #4
 
