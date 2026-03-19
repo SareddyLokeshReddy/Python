@@ -596,3 +596,9 @@ class Solution:
         else:
             return nums[-3]
 #maximum product of two elements in an array
+class Solution:
+    def maxProduct(self, n: int) -> int:
+        t=1
+        r=list(map(int, str(n)))
+        r.sort()
+        return r[-1]*r[-2]  
