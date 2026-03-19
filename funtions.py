@@ -595,3 +595,4 @@ class Solution:
             return nums[-1]
         else:
             return nums[-3]
+#maximum product of two elements in an array
