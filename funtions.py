@@ -602,3 +602,4 @@ class Solution:
         r=list(map(int, str(n)))
         r.sort()
         return r[-1]*r[-2]  
+#find the difference of two arrays
