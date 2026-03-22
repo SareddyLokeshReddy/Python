@@ -609,3 +609,14 @@ class Solution:
         set2 = set(nums2)
         return [list(set1 - set2), list(set2 - set1)]
 #find the number of good pairs
+class Solution:
+    def numIdenticalPairs(self, nums: List[int]) -> int:
+        count={}
+        pairs=0
+        for num in nums:
+            if num in count:
+                pairs+=count[num]
+                count[num]+=1
+            else:
+                count[num]=1
+        return pairs
