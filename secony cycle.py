@@ -230,7 +230,6 @@ u.pay()
 n.pay()
 #abstract method
 from abc import ABC, abstractmethod
-
 class Shape(ABC):
     @abstractmethod
     def area(self):
