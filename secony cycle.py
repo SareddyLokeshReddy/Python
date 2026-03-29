@@ -22,3 +22,4 @@ print(fib(5))
 #range function for two iterations
 for i in range(0,10,2):
     print(i)
+#range function decrase by 2
