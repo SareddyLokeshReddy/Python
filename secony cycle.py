@@ -11,4 +11,5 @@ def fac(n):
         return 1
     return n+fac(n-1)
 print(fac(6))
+#fibanacci
         
