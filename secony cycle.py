@@ -5,4 +5,4 @@ def sum(n):
     return n+sum(n-1)
 n=5
 print(sum(n))
-        
+#factorial
