@@ -19,4 +19,6 @@ def fib(n):
         return 1
     return fib(n-1)+fib(n-2)
 print(fib(5))
-#range function
+#range function for two iterations
+for i in range(0,10,2):
+    print(i)
