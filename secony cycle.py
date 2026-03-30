@@ -34,3 +34,19 @@ print(next(myit))
 print(next(myit))
 print(next(myit))
 print(next(myit))
+#inheritence
+
+class Employee:
+    def show_details(self):
+        print("This is Employee class method")
+
+class Developer(Employee):
+    def dev_work(self):
+        print("This is Developer class method")
+
+dev = Developer()
+
+dev.dev_work()
+
+
+dev.show_details()
