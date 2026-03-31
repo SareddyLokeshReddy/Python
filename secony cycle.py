@@ -85,7 +85,7 @@ class Person:
         print("Age:",self.age)
 p1=Person("Lokesh",22)
 p1.display()
-#Multiple Inheritance
+#1.Multiple Inheritance
 class Father:
     def skills(self):
         print("Father skills")
@@ -99,3 +99,4 @@ c=Child()
 c.display()
 c.skills()
 c.hobbies()
+#2.
