@@ -86,3 +86,16 @@ class Person:
 p1=Person("Lokesh",22)
 p1.display()
 #Multiple Inheritance
+class Father:
+    def skills(self):
+        print("Father skills")
+class Mother:
+    def hobbies(self):
+        print("Mother hobbies")
+class Child(Father,Mother):
+    def display(self):
+        print("Child class")
+c=Child()
+c.display()
+c.skills()
+c.hobbies()
