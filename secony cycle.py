@@ -64,4 +64,5 @@ class ostrich(Bird):
         print("Ostriches cannot fly.")
 obj_bird = Bird()
 obj_spr = sparrow()
-obj_ost = ostrich() 
+obj_ost = ostrich()
+#Single Inheritance 
