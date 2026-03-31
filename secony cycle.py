@@ -114,3 +114,16 @@ c.display()
 c.engine_type()
 c.wheel_count()
 #multilevel inheritance
+class Grandfather:
+    def house(self):
+        print("grand father house")
+class Parent(Grandfather):
+    def car(self):
+        print("Parent car")
+class Child(Parent):
+    def bike(self):
+        print("Child bike")
+c=Child()
+c.bike()
+c.car()
+c.house()
