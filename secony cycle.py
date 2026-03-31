@@ -100,3 +100,16 @@ c.display()
 c.skills()
 c.hobbies()
 #2.
+class Engine:
+    def engine_type(self):
+        print("Engine type")
+class Wheels:
+    def wheel_count(self):
+        print("Wheel count")
+class Car(Engine,Wheels):
+    def display(self):
+        print("Car class")
+c=Car()
+c.display()
+c.engine_type()
+c.wheel_count()
