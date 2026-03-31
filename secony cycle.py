@@ -85,3 +85,4 @@ class Person:
         print("Age:",self.age)
 p1=Person("Lokesh",22)
 p1.display()
+#Multiple Inheritance
