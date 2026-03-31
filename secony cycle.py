@@ -75,3 +75,4 @@ class Dog(Animal):
 d=Dog()
 d.eat()
 d.bark()
+#2.person class 
