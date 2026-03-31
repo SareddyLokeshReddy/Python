@@ -66,3 +66,12 @@ obj_bird = Bird()
 obj_spr = sparrow()
 obj_ost = ostrich()
 #Single Inheritance 
+class Animal:
+    def eat(self):
+        print("animal Eating")
+class Dog(Animal):
+    def bark(self):
+        print("Dog Barking")
+d=Dog()
+d.eat()
+d.bark()
