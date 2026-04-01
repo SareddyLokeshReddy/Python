@@ -128,3 +128,17 @@ c.bike()
 c.car()
 c.house()
 #super()
+class parent:
+    def __init__(self,name):
+        self.name=name
+    def display(self):
+        print("Name:",self.name)
+class child(parent):
+    def __init__(self,name,age):
+        super().__init__(name)
+        self.age=age
+    def display(self):
+        super().display()
+        print("Age:",self.age)
+c=child("Lokesh",22)
+c.display()
