@@ -142,3 +142,4 @@ class child(parent):
         print("Age:",self.age)
 c=child("Lokesh",22)
 c.display()
+#smalest even multiple of 2
