@@ -143,3 +143,11 @@ class child(parent):
 c=child("Lokesh",22)
 c.display()
 #smalest even multiple of 2
+class EvenMultiple:
+    def __init__(self,n):
+        self.n=n
+    def find_multiple(self):
+        if self.n % 2 == 0:
+            return self.n
+        else:
+            return self.n + 1
