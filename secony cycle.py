@@ -152,3 +152,18 @@ class EvenMultiple:
         else:
             return self.n + 1
 #1.hierarchy inheritance 
+class Animal:
+    def eat(self):
+        print("Animal Eating")
+class Dog(Animal):
+    def bark(self):
+        print("Dog Barking")
+class Cat(Animal):
+    def meow(self):
+        print("Cat Meowing")
+d=Dog()
+d.eat()
+d.bark()
+c=Cat()
+c.eat()
+c.meow()
