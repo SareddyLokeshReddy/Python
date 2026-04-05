@@ -151,3 +151,4 @@ class EvenMultiple:
             return self.n
         else:
             return self.n + 1
+#1.hierarchy inheritance 
