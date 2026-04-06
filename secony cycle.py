@@ -167,3 +167,20 @@ d.bark()
 c=Cat()
 c.eat()
 c.meow()
+## Parent class
+class Animal:
+    def shout(self):
+        print("Animal is shouting")
+class Dog(Animal):
+    def bark(self):
+        print("Bow")
+class Cat(Animal):
+    def meow(self):
+        print("Meow")
+d = Dog()
+c = Cat()
+d.shout()   
+d.bark()    
+
+c.shout()  
+c.meow()   
