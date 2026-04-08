@@ -198,3 +198,11 @@ class Rectangle(Shape):
 rect = Rectangle(5, 3)
 print("Area of the rectangle:", rect.area())   
 #polymorphism     
+class Shape():
+    def draw(self):
+        print("it is draw method")
+class circle(Shape):
+    def draw(self):
+        print("it is circle")
+c=circle()
+c.draw()
