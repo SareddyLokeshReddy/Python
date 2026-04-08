@@ -207,3 +207,24 @@ class circle(Shape):
 c=circle()
 c.draw()
 #banking 
+from abc import ABC, abstractmethod
+
+class Payment(ABC):
+    @abstractmethod
+    def pay(self):
+        pass
+class CreditCardPayment(Payment):
+    def pay(self):
+        print("Credit Card Payment")
+class UPIPayment(Payment):
+    def pay(self):
+        print("UPI Payment")
+class NetBankingPayment(Payment):
+    def pay(self):
+        print("Net Banking Payment")
+c = CreditCardPayment()
+u = UPIPayment()
+n = NetBankingPayment()
+c.pay()
+u.pay()
+n.pay()
