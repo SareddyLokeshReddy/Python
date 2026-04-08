@@ -196,4 +196,5 @@ class Rectangle(Shape):
     def area(self):
         return self.width * self.height
 rect = Rectangle(5, 3)
-print("Area of the rectangle:", rect.area())        
+print("Area of the rectangle:", rect.area())   
+#polymorphism     
