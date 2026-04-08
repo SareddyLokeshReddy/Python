@@ -228,3 +228,33 @@ n = NetBankingPayment()
 c.pay()
 u.pay()
 n.pay()
+#abstract method
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+    @abstractmethod
+    def perimeter(self):
+        pass
+
+class Circle(Shape):
+    def area(self):
+        print("Circle Area")
+    def perimeter(self):
+        print("Circle Perimeter")
+
+class Rectangle(Shape):
+    def area(self):
+        print("Rectangle Area")
+    def perimeter(self):
+        print("Rectangle Perimeter")
+
+c = Circle()
+r = Rectangle()
+c.area()
+c.perimeter()
+r.area()
+r.perimeter()
