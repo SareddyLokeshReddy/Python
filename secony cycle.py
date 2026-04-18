@@ -258,3 +258,13 @@ c.perimeter()
 r.area()
 r.perimeter()
 #temparature control
+class Temp:
+    def __init__(self):
+        self.__celsius = 0
+    def set_temp(self, c):
+        self.__celsius = c
+    def to_fahrenheit(self):
+        return (self.__celsius * 9/5) + 32
+t = Temp()
+t.set_temp(25)
+print("Fahrenheit:", t.to_fahrenheit())
