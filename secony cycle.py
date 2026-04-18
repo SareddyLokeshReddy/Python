@@ -268,3 +268,4 @@ class Temp:
 t = Temp()
 t.set_temp(25)
 print("Fahrenheit:", t.to_fahrenheit())
+#method overidding
