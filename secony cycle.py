@@ -276,3 +276,8 @@ class Child(Parent):
     def show(self):
         print("Child class method")
 p = Parent()    
+# Check if All A's Appears Before All B's
+class Solution:
+    def checkString(self, s: str) -> bool:
+        a = "".join(sorted(s))
+        return a == s
