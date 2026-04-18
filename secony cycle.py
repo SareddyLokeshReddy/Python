@@ -269,3 +269,10 @@ t = Temp()
 t.set_temp(25)
 print("Fahrenheit:", t.to_fahrenheit())
 #method overidding
+class Parent:
+    def show(self):
+        print("Parent class method")
+class Child(Parent):
+    def show(self):
+        print("Child class method")
+p = Parent()    
