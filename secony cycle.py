@@ -282,3 +282,6 @@ class Solution:
         a = "".join(sorted(s))
         return a == s
 # Check if the Sentence Is Pangram
+class Solution:
+    def checkIfPangram(self, sentence: str) -> bool:
+        return set('abcdefghijklmnopqrstuvwxyz').issubset(set(sentence))        
