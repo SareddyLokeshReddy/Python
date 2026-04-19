@@ -281,3 +281,4 @@ class Solution:
     def checkString(self, s: str) -> bool:
         a = "".join(sorted(s))
         return a == s
+# Check if the Sentence Is Pangram
