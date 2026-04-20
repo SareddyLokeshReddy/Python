@@ -285,3 +285,4 @@ class Solution:
 class Solution:
     def checkIfPangram(self, sentence: str) -> bool:
         return set('abcdefghijklmnopqrstuvwxyz').issubset(set(sentence))        
+     #Array Partition
