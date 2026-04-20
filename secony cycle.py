@@ -295,3 +295,4 @@ class Solution:
         for i in range(0,len(nums),2):
             sum += nums[i]
         return sum
+#Harshad number
