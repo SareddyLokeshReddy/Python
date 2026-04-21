@@ -307,3 +307,12 @@ class Solution:
         else:
             return -1
 #candy distribution
+class Solution:
+    def distributeCandies(self, candyType: List[int]) -> int:
+        a = set(candyType)
+        t = int(len(candyType) / 2)
+        if len(a) == t or len(a) > t:
+            return t
+        elif len(a) < t:
+            return len(a)
+        
