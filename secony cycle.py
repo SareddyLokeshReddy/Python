@@ -306,5 +306,4 @@ class Solution:
             return t
         else:
             return -1
-
-        
+#candy distribution
