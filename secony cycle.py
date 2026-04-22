@@ -363,3 +363,12 @@ s3=Student("ram",19,23)
 s1.display()
 s2.display()
 s3.display()
+""". Constructor
+Create class Employee
+Constructor should accept:
+name
+department
+salary
+Create method:
+show_details()
+Create 2 objects."""
