@@ -185,6 +185,7 @@ c.shout()
 c.meow()   
 #abstract class
 from abc import ABC, abstractmethod
+from os import name
 
 from rpds import List         
 class Shape(ABC): 
@@ -339,3 +340,11 @@ class Solution:
         for i in range(3,n+1):
             T[i] = T[i-1] + T[i-2] + T[i-3]
         return T[n]
+"""1. Class & Object
+Create a class Student Attributes:
+name
+age
+marks
+Method:
+display()
+Create 3 objects and print details."""
