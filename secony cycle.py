@@ -372,3 +372,16 @@ salary
 Create method:
 show_details()
 Create 2 objects."""
+class Employee:
+    def __init__(self,name,department,salary):
+        self.name=name
+        self.department=department
+        self.salary=salary
+    def show_details(self):
+        print("name:",self.name)
+        print("department:",self.department)
+        print("salary:",self.salary)
+e1=Employee("Lokesh","HR",5000)
+e2=Employee("Ravi","Manager",100000)
+e1.show_details()
+e2.show_details()
