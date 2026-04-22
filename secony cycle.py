@@ -348,3 +348,18 @@ marks
 Method:
 display()
 Create 3 objects and print details."""
+class Student:
+    def __init__(self,name,age,marks):
+        self.name=name
+        self.age=age
+        self.marks=marks
+    def display(self):
+        print("name:",self.name)
+        print("age:",self.age)
+        print("marks:",self.marks)
+s1=Student("lokesh",21,25)
+s2=Student("ravi",20,21)
+s3=Student("ram",19,23)
+s1.display()
+s2.display()
+s3.display()
