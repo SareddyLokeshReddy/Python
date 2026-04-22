@@ -326,7 +326,7 @@ class Employee:
         print(f"Name: {self.name}")
         print(f"Age: {self.age}")
         print(f"Department: {self.department}")
-#
+#N-th Tribonacci Number
 class Solution:
     def tribonacci(self, n: int) -> int:
         if n==0 or n==1:
