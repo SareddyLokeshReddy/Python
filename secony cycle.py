@@ -357,7 +357,7 @@ class Student:
         print("name:",self.name)
         print("age:",self.age)
         print("marks:",self.marks)
-s1=Student("lokesh",21,25)
+s1=Student("lokesh",22,25)
 s2=Student("ravi",20,21)
 s3=Student("ram",19,23)
 s1.display()
