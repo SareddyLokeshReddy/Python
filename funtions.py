@@ -742,3 +742,63 @@ vote("lokesh",18)
 def area(l=5,b=20):
     print(l*b)
 area()
+#3.⁠ ⁠Python *args / **kwargs
+#Write a function using *args to find the sum of numbers.
+def sum_numbers(*args):
+    t=0
+    for n in args:
+        t+=n
+    return t
+print(sum_numbers(1,2,3))
+#Create a function using *args to find the largest number.
+def largest(*args):
+    lar=args[0]
+    for n in args:
+        if n>lar:
+            lar=n
+        else:
+            lar=args[0]
+    return lar
+print(largest(1,2,3,4,5))
+#Write a function using **kwargs to print student details.
+def student(**kwargs):
+    print(kwargs["name"]+" "+kwargs["branch"])
+student(name="lokesh",branch="cse")
+#Create a function using **kwargs to display employee information.
+def employee(**kwargs):
+    print(kwargs["id"]+" "+kwargs["name"]+" "+kwargs["department"])
+employee(id="1",name="lokesh",department="HR")
+#Write a function using *args to calculate average.
+def ave(*args):
+    if len(args)==0:
+        return 0
+    t=sum(args)
+    ave=t/len(args)
+    return ave
+print(ave(1,2,3,4))
+#Create a function using *args to multiply all numbers.
+def mul(*args):
+    t=1
+    for n in args:
+        t*=n
+    return t
+print(mul(1,2,3,4))
+#Write a function using **kwargs to print key-value pairs.
+def pairs(**kwargs):
+    print(kwargs)
+pairs(id=1,value="lokesh")
+#Create a function using both *args and **kwargs.
+def both(*args, **kwargs):
+    print(args)
+    print(kwargs)
+both(1, 2, 3, name="Lokesh", age=21)
+#Write a function that counts total arguments passed using *args.
+def count(*args):
+    c=len(args)
+    print(c)
+count(1,2,3,4)
+#Create a function to display product details using **kwargs.
+def details(**kwargs):
+    print(kwargs)
+details(id=1,name="rice",location="hyd")
+
