@@ -620,3 +620,78 @@ class Solution:
             else:
                 count[num]=1
         return pairs
+#1.⁠ ⁠Python Functions
+# add numbers
+def add(a,b):
+    return(a+b)
+print(5+6)
+
+#Create a function to check whether a number is even or odd.
+def even_or_odd(num):
+    if num % 2==0:
+        return "even"
+    else:
+        return "false"
+print(even_or_odd(10))
+#Write a function to find the factorial of a number.
+def factorial(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+print(factorial(5))
+#Create a function that returns the largest among three numbers.
+def largest(a,b,c):
+    if a>b and a>c:
+        return a
+    elif b>c and  b>a:
+        return b
+    else:
+        return c
+print(largest(10,20,30))
+#Write a function to count vowels in a string.
+def count_vowels(text):
+    vowels = "aeiouAEIOU"
+    count = 0
+    
+    for char in text:
+        if char in vowels:
+            count += 1
+            
+    return count
+print(count_vowels("lokesh"))
+#Create a function to reverse a string.
+def reverse(text):
+    s=text[::-1]
+    return s
+print(reverse("lokesh"))
+#Write a function to calculate the sum of elements in a list.
+def sum(a):
+    if len(a)==0:
+        return 0
+    else:
+        return a[0]+sum(a[1:])
+list=[1,2,3,4,5]
+print(sum(list))
+#Create a function to check whether a string is a palindrome.
+def palindrome(t1):#
+    if t1==t1[::-1]:
+        return "it is a plaindrome"
+    else:
+        return "It is not a plaindrome"
+print(palindrome("121"))
+#Write a function to find the minimum element in a list.
+def find_min(num):
+    min = num[0]
+
+    for num in num:
+        if num < min:
+            min = num
+
+    return min
+print(find_min([2,3,1,4,5]))
+#Create a function that converts Celsius temperature into Fahrenheit.
+def cel_to_fah(c):
+    f=(c*9/5)+32
+    return f
+print(cel_to_fah(30))
