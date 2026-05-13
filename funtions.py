@@ -695,3 +695,50 @@ def cel_to_fah(c):
     f=(c*9/5)+32
     return f
 print(cel_to_fah(30))
+
+#arguments
+#Write a function using positional arguments to multiply two numbers.
+def add(a,b):
+    print(a+b)
+add(5,6)
+#Create a function using keyword arguments to display student details.
+def student(name,branch):
+    print(name +" "+  branch)
+student(name="lokesh",branch="cse")
+#Write a function with a default argument for country name.
+def name(n="India"):
+    print("Hello"+n)
+name()
+#Create a function that takes three arguments and prints their average.
+def ave(a,b,c):
+    t = (a+b+c)/3
+    return t
+print(ave(10,20,30))
+#Write a function with default values for username and password.
+def details(Username="lokesh",password="1234"):
+    print(Username+" "+password)
+details()
+#Create a function that accepts marks of five subjects as arguments.
+def marks(a,b,c,d,e):
+    print(a,b,c,d,e)
+marks(10,20,30,40,50)
+#Write a function to calculate simple interest using arguments.
+def si(p,t,r):
+    s=(p*t*r)/100
+    print(s)
+si(10,20,30)
+#Create a function using mixed positional and keyword arguments.
+def mix(n,name):
+    print(n+name)
+mix("9",name="lokesh")
+#Write a function that accepts name and age, then prints eligibility for voting.
+def vote(name,age):
+    if age <=18:
+        print(name+"He is eligible")
+    else:
+        print(name+"not eligible")
+vote("lokesh",18)
+#Create a function using default arguments to calculate area of rectangle.
+def area(l=5,b=20):
+    print(l*b)
+area()
