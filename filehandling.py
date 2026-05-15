@@ -7,7 +7,7 @@ print(f.read())
 f.close()
 
 f=open("file1.txt","a")
-f.write("This is the python 3")
+f.write("This is the python ")
 f.close()
 
 f=open("file2.txt","x")
