@@ -14,5 +14,5 @@ f=open("file2.txt","x")
 f.close()
 
 f=open("file2.txt","w")
-f.write("This is the file handling in python 3")
+f.write("This is the file handling in python ")
 f.close()
