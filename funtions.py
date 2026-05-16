@@ -958,3 +958,21 @@ class cat(dog):
 r=cat()
 r.meow()
 r.bark()
+# 5.⁠ ⁠Demonstrate method overriding.
+class Animal:
+    def sound(self):
+        print("it is sounding")
+class dog:
+    def sound(self):
+        print("It is bow")
+d=dog()
+d.sound()
+# 6.⁠ ⁠Use ⁠ super() ⁠ in inheritance.
+class Parent:
+    def __init__(self):
+        print("Parent constructor")
+class Child(Parent):
+    def __init__(self):
+        super().__init__()   
+        print("Child constructor")
+c = Child()
