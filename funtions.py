@@ -904,3 +904,28 @@ class evenorodd:
             print("It is odd")
 e=evenorodd(10)
 e.div()
+## Python Inheritance Programs
+#1.⁠ ⁠Create single inheritance using ⁠ Animal ⁠ and ⁠ Dog ⁠.
+class Animal:
+    def sound(self):
+        print("bark")
+class dog(Animal):
+    def bark(self):
+        print("Dog barks")
+d1=dog()
+d1.sound()
+d1.bark()
+# 2.⁠ ⁠Create multilevel inheritance example.
+class Lion:
+    def first(self):
+        print("It is Big")
+class Bare(Lion):
+    def second(self):
+        print("it is small")
+class deer(Bare):
+    def third(self):
+        print("It is a very small")
+d=deer()
+d.first()
+d.second()
+d.third()
