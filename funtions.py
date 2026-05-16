@@ -880,3 +880,27 @@ r2=stu.sub(5,4)
 print("add:",r)
 print("mul:",r1)
 print("sub:",r2)
+r2=stu.sub(5,4)
+print("add:",r)
+print("mul:",r1)
+print("sub:",r2)
+
+#8.⁠ ⁠Create a method calling another method.
+class A:
+    def __init__(self,name):
+        self.name=name
+    def display(self):
+        print("Name:",self.name)
+a=A("Lokesh")
+a.display()
+# 9.⁠ ⁠Create a method to check even or odd.
+class evenorodd:
+    def __init__(self,a):
+        self.a=a
+    def div(self):
+        if self.a%2==0:
+            print("It is even")
+        else:
+            print("It is odd")
+e=evenorodd(10)
+e.div()
