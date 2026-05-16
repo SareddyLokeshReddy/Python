@@ -859,3 +859,24 @@ class Emp:
 Emp.add(101)
 e1 = Emp("Lokesh")
 e1.display()
+# 6.⁠ ⁠Create a static method using ⁠ @staticmethod ⁠.
+class detail:
+    @staticmethod
+    def name(sname):
+        return sname
+r=detail.name("Lokesh")
+print("Name:",r)
+# 7.⁠ ⁠Create multiple methods in one class.
+class stu:
+    def add(a,b):
+        return a+b
+    def mul(a,b):
+        return a*b
+    def sub(a,b):
+        return a-b
+r=stu.add(5,4)
+r1=stu.mul(5,4)
+r2=stu.sub(5,4)
+print("add:",r)
+print("mul:",r1)
+print("sub:",r2)
