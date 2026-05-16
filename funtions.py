@@ -929,3 +929,32 @@ d=deer()
 d.first()
 d.second()
 d.third()
+# 3.⁠ ⁠Create hierarchical inheritance example.
+class Human:
+    def work(self):
+        print("human can work")
+class Eat(Human):
+    def eat(self):
+        print("It is eating")
+class Run(Human):
+    def run(self):
+        print("It is running")
+e=Eat()
+e.work()
+e.eat()
+t=Run()
+t.work()
+t.run()
+#4.⁠ ⁠Create multiple inheritance example.
+class Animal:
+    def sound(self):
+        print("Sounds")
+class dog(Animal):
+    def bark(self):
+        print("It is barking")
+class cat(dog):
+    def meow(self):
+        print("it is meow")
+r=cat()
+r.meow()
+r.bark()
