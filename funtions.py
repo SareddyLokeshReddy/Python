@@ -802,3 +802,28 @@ def details(**kwargs):
     print(kwargs)
 details(id=1,name="rice",location="hyd")
 
+# Python Class Methods Programs
+# 1.⁠ ⁠Create a method to display student information.
+class Student:
+    def __init__(self, name, depart):
+        self.name=name
+        self.depart=depart
+    def display(self):
+        print("Name:",self.name)
+        print("Depart:",self.depart)
+s1=Student("Lokesh","CSE")
+s1.display()
+
+# 2.⁠ ⁠Create a method to calculate addition.
+class Addition:
+    def add(self, a, b):
+        return a + b
+a1 = Addition()
+print(a1.add(5, 4))
+# 3.⁠ ⁠Create a method returning square of a number.
+class Square:
+    def square(self,a):
+        return a*a
+s=Square()
+print(s.square(4))
+
