@@ -827,3 +827,35 @@ class Square:
 s=Square()
 print(s.square(4))
 
+
+# 4.⁠ ⁠Create a method to update employee salary.
+class emp:
+    def __init__(self,name):
+        self.name=name
+    def set_name(self,name):
+        self.name=name
+    def display(self):
+        print("Name:",self.name)
+e1=emp("Lokesh")
+print("Before:")
+e1.display()
+e1.set_name("Ravi")
+print("After")
+e1.display()#
+
+# 5.⁠ ⁠Create a class method using ⁠ @classmethod ⁠.
+class Emp:
+    def __init__(self, name):
+        self.name = name
+
+    @classmethod
+    def add(cls, emp_id):
+        cls.id = emp_id
+
+    def display(self):
+        print("Name:", self.name)
+        print("ID:", Emp.id)
+
+Emp.add(101)
+e1 = Emp("Lokesh")
+e1.display()
