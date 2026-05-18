@@ -961,7 +961,7 @@ r.bark()
 # 5.⁠ ⁠Demonstrate method overriding.
 class Animal:
     def sound(self):
-        print("it is sounding")
+        print("it is sound")
 class dog:
     def sound(self):
         print("It is bow")
