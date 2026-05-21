@@ -976,3 +976,16 @@ class Child(Parent):
         super().__init__()   
         print("Child constructor")
 c = Child()
+
+#Subtract the Product and Sum of Digits of an Integer – Simple Digit Traversal Approach
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        p=1
+        s=0
+        t=str(n)
+        for i in t:
+            d=int(i)
+            s+=d
+            p*=d
+        return p-s
+        
