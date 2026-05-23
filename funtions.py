@@ -1027,3 +1027,11 @@ class Solution:
             if dic[s[i]]==1:
                 return i
         return -1
+#3
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        r=[]
+        for i in range(len(nums1)):
+            if nums1[i] in nums2:
+                r.append(nums1[i])
+        return list(set(r))
