@@ -997,3 +997,20 @@ class Solution:
             c=max(nums[i],c+nums[i])
             m=max(m,c)
         return m
+#find difference
+class Solution:
+    def findTheDifference(self, s: str, t: str) -> str:
+        r={}
+        for ch in t:
+            if ch in r:
+                r[ch]+=1
+            else:
+                r[ch]=1
+        for c in s:
+            if c in r:
+                r[c]-=1
+            else:
+                r[c]=1
+        for key,value in r.items():
+            if value==1:
+                return key
