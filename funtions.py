@@ -1052,3 +1052,7 @@ class Solution:
             if nums1[i] in nums2:
                 r.append(nums1[i])
         return list(set(r))
+#class Solution:
+    def peakIndexInMountainArray(self, arr: List[int]) -> int:
+        return arr.index(max(arr))
+        
