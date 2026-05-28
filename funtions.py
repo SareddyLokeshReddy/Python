@@ -1098,3 +1098,11 @@ class Solution:
                 num-=1
                 n+=1
         return n
+class Solution:
+    def isPowerOfTwo(self, n: int) -> bool:
+        for i in range(31):
+            if n==2**i:
+             return True
+        else:
+            return False
+        
