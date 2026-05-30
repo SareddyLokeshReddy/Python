@@ -1137,3 +1137,11 @@ for i in range(len(A)):
     res.append(row)
 
 print(res)
+class Solution:
+    def minElement(self, nums: List[int]) -> int:
+        for i in range(len(nums)):
+            t = 0
+            for j in str(nums[i]):
+                t += int(j)
+            nums[i] = t
+        return min(nums)
