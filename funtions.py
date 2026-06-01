@@ -1155,3 +1155,11 @@ class Solution:
                 left += 1
                 right -= 1
         return image
+class Solution:
+    def minimumCost(self, cost: List[int]) -> int:
+        cost.sort(reverse = True)
+        t = sum(cost)
+        for i in range(2,len(cost),3):
+            t -= cost[i]
+        return t
+ 
