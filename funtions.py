@@ -1162,4 +1162,18 @@ class Solution:
         for i in range(2,len(cost),3):
             t -= cost[i]
         return t
+class Solution:
+    def kWeakestRows(self, mat: List[List[int]], k: int) -> List[int]:
+        r={}
+        for i in range(len(mat)):
+            c=0
+            for j in range(len(mat[i])):
+                if mat[i][j]==1:
+                    c+=1
+            r[i]=c
+        s=sorted(r,key=r.get)
+        return s[:k]
+        
+        
+
  
