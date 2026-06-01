@@ -1173,6 +1173,17 @@ class Solution:
             r[i]=c
         s=sorted(r,key=r.get)
         return s[:k]
+        class Solution:
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        s=[]
+        for i in range(len(accounts)):
+            sum=0
+            for j in range(len(accounts[0])):
+                sum+=accounts[i][j]
+            s.append(sum)
+        return max(s)
+        
         
         
 
