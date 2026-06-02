@@ -1199,7 +1199,18 @@ class Solution:
                 if grid[i][j]<0:
                     c+=1
         return c
-        
+class Solution:
+    def luckyNumbers(self, matrix: List[List[int]]) -> List[int]:
+        r=[]
+        for i in range(len(matrix)):
+            m=min(matrix[i])
+            c=0
+            for j in range(len(matrix[0])):
+                if matrix[j][matrix[i].index(m)]>m:
+                    c+=1
+            if c==len(matrix)-1:
+                r.append(m)
+        return r
         
         
 
