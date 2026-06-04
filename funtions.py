@@ -1239,6 +1239,12 @@ class Solution:
                 r = m - 1
             else:
                 l = m + 1
+class Solution:
+    def mostWordsFound(self, sentences: List[str]) -> int:
+        t=0
+        for s in sentences:
+            t=max(t,len(s.split()))
+        return t
         
 
  
