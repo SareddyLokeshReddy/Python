@@ -1245,6 +1245,19 @@ class Solution:
         for s in sentences:
             t=max(t,len(s.split()))
         return t
+class Solution:
+    def findDuplicates(self, nums: List[int]) -> List[int]:
+        c={}
+        l=[]
+        for i in nums:
+            if i in c:
+                c[i]+=1
+            else:
+                c[i]=1
+        for key,value in c.items():
+            if c[key]==2:
+                l.append(key)
+        return l
         
 
  
