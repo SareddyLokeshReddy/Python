@@ -1292,7 +1292,22 @@ def aVeryBigSum(ar):
     for i in ar:
         r+=i
     return r
-        
+#plus minus    
+def plusMinus(arr):
+    n=len(arr)
+    p=0
+    N=0
+    z=0
+    for i in arr:
+        if i>0:
+            p+=1
+        elif i<0:
+            N+=1
+        else:
+            z+=1
+    print(p/n)
+    print(N/n)
+    print(z/n)
         
         
 
