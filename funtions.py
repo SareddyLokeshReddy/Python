@@ -1273,6 +1273,20 @@ class Solution:
             if ord(target)<ord(i):
                 return i
         return letters[0]
+class Solution:
+    def nextGreatestLetter(self, letters: List[str], target: str) -> str:
+        l=0
+        r=len(letters)-1
+        ans=letters[0]
+        while l<=r:
+            m=(l+r)//2
+            if ord(letters[m])>ord(target):
+                ans=letters[m]
+                r=m-1
+            else:
+                l=m+1
+        return ans
+        
         
         
         
