@@ -1286,7 +1286,12 @@ class Solution:
             else:
                 l=m+1
         return ans
-        
+#big sum
+def aVeryBigSum(ar):
+    r=0
+    for i in ar:
+        r+=i
+    return r
         
         
         
