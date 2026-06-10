@@ -1318,6 +1318,15 @@ class Solution:
 class Solution:
     def maxTotalValue(self, nums: List[int], k: int) -> int:
          return (max(nums) - min(nums)) * k
+class Solution:
+    def findPeakElement(self, nums: List[int]) -> int:
+        m=0
+        for i in range(1,len(nums)):
+            if nums[i]>nums[m]:
+                m=i
+        return m
+
+        
             
         
 
