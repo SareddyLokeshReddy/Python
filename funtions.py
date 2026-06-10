@@ -1320,11 +1320,11 @@ class Solution:
          return (max(nums) - min(nums)) * k
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
-        m=0
+        n=0
         for i in range(1,len(nums)):
-            if nums[i]>nums[m]:
-                m=i
-        return m
+            if nums[i]>nums[n]:
+                n=i
+        return n
 
         
             
