@@ -1315,6 +1315,10 @@ class Solution:
             for j in range(num - i - 1):
                 if nums[j] > nums[j + 1]:
                     nums[j], nums[j + 1] = nums[j + 1], nums[j]
+class Solution:
+    def maxTotalValue(self, nums: List[int], k: int) -> int:
+         return (max(nums) - min(nums)) * k
+            
         
 
  
