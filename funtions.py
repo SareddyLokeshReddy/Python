@@ -1357,6 +1357,22 @@ class Solution:
             if hours[i]>=target:
                 c+=1
         return c
+class Solution:
+    def frequencySort(self, s: str) -> str:
+        freq={}
+        for i in s:
+            if i in freq:
+                freq[i]+=1
+            else:
+                freq[i]=1
+        pairs=[]
+        for key in freq:
+            pairs.append([freq[key],key])
+            pairs.sort(reverse=True)
+        ans=""
+        for char,count in pairs:
+            ans+=count*char
+        return ans
         
             
         
