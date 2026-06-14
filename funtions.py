@@ -1387,6 +1387,16 @@ def diagonalDifference(arr):
         f += arr[i][i]
         l += arr[i][n - i - 1]
     return abs(f-l)
+def birthdayCakeCandles(candles):
+    m=candles[0]
+    c=0
+    for i in candles:
+        if i >m:
+            m=i
+            c=1
+        elif i==m:
+            c+=1
+    return c
         
 
  
