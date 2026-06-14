@@ -1373,7 +1373,12 @@ class Solution:
         for char,count in pairs:
             ans+=count*char
         return ans
-        
+class Solution:
+    def digitFrequencyScore(self, n: int) -> int:
+        d=0
+        for i in str(n):
+            d+=int(i)
+        return d
             
         
 
