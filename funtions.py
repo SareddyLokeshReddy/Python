@@ -1379,7 +1379,14 @@ class Solution:
         for i in str(n):
             d+=int(i)
         return d
-            
+def diagonalDifference(arr):
+    n = len(arr)
+    f = 0
+    l = 0
+    for i in range(n):
+        f += arr[i][i]
+        l += arr[i][n - i - 1]
+    return abs(f-l)
         
 
  
