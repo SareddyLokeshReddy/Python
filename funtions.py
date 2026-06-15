@@ -1403,5 +1403,19 @@ class Solution:
             if abs(int(s[i])-int(s[i+1])) > 2:
                 return False
         return True
+class Solution:
+    def passwordStrength(self, password: str) -> int:
+        s=set(password)
+        c=0
+        for i in s:
+            if i.islower():
+                c+=1
+            elif i.isupper():
+                c+=2
+            elif i.isdigit():
+                c+=3
+            else:
+                c+=5
+        return c
 
  
