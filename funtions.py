@@ -1443,5 +1443,19 @@ class Solution:
             elif i=="%":
                 r=r[::-1]
         return "".join(r)
-        
+class Solution:
+    def findLucky(self, arr: List[int]) -> int:
+        d={}
+        for i in arr:
+            if i in d:
+                d[i]+=1
+            else:
+                d[i]=1
+        r=[]
+        for key,value in d.items():
+            if key==value:
+                r.append(key)
+        if len(r)!=0:
+            return max(r)
+        return -1
  
