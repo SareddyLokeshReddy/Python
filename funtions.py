@@ -1458,4 +1458,11 @@ class Solution:
         if len(r)!=0:
             return max(r)
         return -1
+class Solution:
+    def findPeaks(self, mountain: List[int]) -> List[int]:
+        p=[]
+        for i in range(1,len(mountain)-1):
+            if mountain[i]>mountain[i-1] and mountain[i]>mountain[i+1]:
+                p.append(i)
+        return p
  
