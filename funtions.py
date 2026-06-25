@@ -1510,3 +1510,19 @@ class Solution:
             return nums
 
         return sort(nums)
+def quickSort(arr):
+    n=len(arr)
+    if n<=1:
+        return arr
+    p=arr[n//2]
+    l=[]
+    m=[]
+    r=[]
+    for i in arr:
+        if i<p:
+            l.append(i)
+        elif i==p:
+            m.append(i)
+        else:
+            r.append(i)
+    return quickSort(l)+m+quickSort(r)
