@@ -1526,3 +1526,10 @@ def quickSort(arr):
         else:
             r.append(i)
     return quickSort(l)+m+quickSort(r)
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        nums.sort(reverse=True)
+        return nums[k-1]
+
+        
+        
