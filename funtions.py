@@ -1529,7 +1529,17 @@ def quickSort(arr):
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
         nums.sort(reverse=True)
-        return nums[k-2]
+        return nums[k-1]
+class Solution:
+    def separateDigits(self, nums: List[int]) -> List[int]:
+        l=[]
+        for i in nums:
+            for j in str(i):
+                l.append(int(j))
+        return l
+
+        
+
 
         
         
