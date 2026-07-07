@@ -1574,8 +1574,17 @@ class Solution:
         i, j = diff
         return s[i] == goal[j] and s[j] == goal[i]
 
-
-        
+ class Solution:
+    def sortColors(self, nums: List[int]) -> None:
+        count = [0] * 3  
+        for num in nums:
+            count[num] += 1
+        index = 0
+        for i in range(3):
+            while count[i] > 0:
+                nums[index] = i
+                index += 1
+                count[i] -= 1
 
 
         
