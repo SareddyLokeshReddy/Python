@@ -1585,7 +1585,21 @@ class Solution:
                 nums[index] = i
                 index += 1
                 count[i] -= 1
-
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        minimum = min(nums)
+        maximum = max(nums)
+        size = maximum - minimum + 1
+        count = [0] * size
+        output = [0] * len(nums)
+        for num in nums:
+            count[num - minimum] += 1
+        for i in range(1, size):
+            count[i] += count[i - 1]
+        for i in range(len(nums) - 1, -1, -1):
+            output[count[nums[i] - minimum] - 1] = nums[i]
+            count[nums[i] - minimum] -= 1
+        return output
 
         
         
