@@ -1600,6 +1600,27 @@ class Solution:
             output[count[nums[i] - minimum] - 1] = nums[i]
             count[nums[i] - minimum] -= 1
         return output
+class Solution:
+    def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:
+        freq = {}
+        words1 = s1.split()
+        words2 = s2.split()
+        for word in words1:
+            if word in freq:
+                freq[word] += 1
+            else:
+                freq[word] = 1
+        for word in words2:
+            if word in freq:
+                freq[word] += 1
+            else:
+                freq[word] = 1
+        ans = []
+        for word in freq:
+            if freq[word] == 1:
+                ans.append(word)
+        return ans
+        
 
         
         
