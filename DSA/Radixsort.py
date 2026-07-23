@@ -82,3 +82,18 @@ class Solution:
             l+=1
             r-=1
         return s
+class Solution:
+    def maxVowels(self, s: str, k: int) -> int:
+        win=s[:k]
+        c=0
+        for i in win:
+            if i in 'aeiou':
+                c+=1
+        max_v=c
+        for i in range(k,len(s)):
+            if s[i-k] in 'aeiou':
+                c-=1
+            if s[i] in 'aeiou':
+                c+=1
+            max_v=max(max_v,c)
+        return max_v
