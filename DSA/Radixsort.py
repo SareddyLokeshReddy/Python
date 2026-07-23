@@ -66,7 +66,6 @@ def sliding(arr,k):
             count += 1
         max_vow = max(max_vow,count)
     return max_vow
-
 arr = ['a','i','o','r','t','u','o']
 k = 4
 print(sliding(arr,k))
@@ -74,3 +73,12 @@ print(sliding(arr,k))
 # arr1 = ['b','e','a','t','i','o','n']
 # k1 = 3
 # print(sliding(arr1,k1))
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        l=0
+        r=len(s)-1
+        while l<r:
+            s[l],s[r]=s[r],s[l]
+            l+=1
+            r-=1
+        return s
